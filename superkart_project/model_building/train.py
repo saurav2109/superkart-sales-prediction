@@ -15,7 +15,7 @@ import joblib
 import os
 import mlflow
 # for hugging face space authentication to upload files
-from huggingface_hub import HfApi, create_repo, RepositoryNotFoundError
+from huggingface_hub import HfApi, create_repo
 
 # Initialize HfApi for uploading the model file
 api = HfApi(token=os.getenv("HF_TOKEN"))
