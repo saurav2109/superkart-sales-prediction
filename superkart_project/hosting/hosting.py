@@ -26,10 +26,10 @@ api = HfApi(token=os.getenv("HF_TOKEN"))
 space_repo_id = "sauravghosh2109/superkart-sales-predictor"
 
 api.upload_folder(
-    folder_path="superKart_project/deployment",     # the local folder containing your files (app.py and preprocessor.joblib)
+    folder_path="superkart_project/deployment",     # the local folder containing your files (app.py and preprocessor.joblib)
     repo_id=space_repo_id,          # the target Space repo
     repo_type="space",                      # dataset, model, or space
     path_in_repo="",                          # optional: subfolder path inside the repo
     commit_message="Upload updated Streamlit app and preprocessor for deployment"
 )
-print(f"Uploaded contents of superKart_project/deployment to Hugging Face Space '{space_repo_id}'.")
+print(f"Uploaded contents of superkart_project/deployment to Hugging Face Space '{space_repo_id}'.")
